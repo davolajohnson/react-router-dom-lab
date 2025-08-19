@@ -1,0 +1,28 @@
+.mail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+/* 👇 Place the .mail-box CSS here (as hinted in the lab) */
+.mail-box {
+  display: grid;
+  place-items: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+
+  /* Make it a square */
+  aspect-ratio: 1 / 1;
+}
+
+.mail-box:hover {
+  background: #f7f7f7;
+}
+
+.box-id {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
